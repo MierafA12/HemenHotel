@@ -1,0 +1,28 @@
+
+*{
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    color: #FFC107;
+    font-size:30px;
+    margin-bottom: 10px;
+    font-weight:bold ;
+}
+.map-container {
+    width: 100%;
+    max-width: 90%;
+    height: 450px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+ 
+  .map-container iframe {
+    width: 100%;
+    border-radius: 16px;
+  
+  }
+  
