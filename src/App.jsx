@@ -5,6 +5,9 @@ import About from './pages.jsx/About';
 import Menu from './pages.jsx/Menu';
 import Contact from './pages.jsx/Contact';
 import Header from './component.jsx/Header';
+import Services from './pages.jsx/Services';
+import Rooms from './pages.jsx/Rooms';
+
 
 const App = () => {
   return (
@@ -12,7 +15,9 @@ const App = () => {
       <Header/>          
        <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<Menu />} />
+        {/* <Route path="/services" element={<Services />} />  */}
+        <Route path="/services/rooms" element={<Rooms />} /> 
+        <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

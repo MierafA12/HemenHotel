@@ -59,4 +59,47 @@
     text-decoration: underline #b3daf6;  
 }
 
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dropdown-menu .dropdown-link {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-menu .dropdown-link:hover {
+    background-color: #ff6347; 
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block; 
+  }
+  
+  #serv::after {
+  content: ' ▼'; /* This adds the downward arrow */
+  font-size: 0.8rem;
+  margin-left: 5px;
+  color: #FFC107;
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
 
+  
+
+  

@@ -25,8 +25,12 @@ export default function Header() {
         <div className='one-links'>
           <Link className='link' to='/'>Home</Link>
         </div>
-        <div className='one-links'>
-          <Link className='link' to='/about'>About</Link>
+        <div className='one-links dropdown'>
+          <Link className='link' id="serv" to='/services'>Services  </Link>
+          <div className='dropdown-menu'>
+            <Link className='dropdown-link' to='/services/rooms'>Rooms</Link>
+            <Link className='dropdown-link' to='/services/meeting'>Meeting</Link>
+          </div>
         </div>
         <div className='one-links'>
           <Link className='link' to='/menu'>Menu</Link>
