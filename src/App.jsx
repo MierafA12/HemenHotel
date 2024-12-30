@@ -7,7 +7,8 @@ import Contact from './pages.jsx/Contact';
 import Header from './component.jsx/Header';
 import Services from './pages.jsx/Services';
 import Rooms from './pages.jsx/Rooms';
-
+import Footer from './component.jsx/Footer'; 
+import Map from './component.jsx/Map';
 
 const App = () => {
   return (
@@ -20,7 +21,9 @@ const App = () => {
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Map" element={<Map/>} />
       </Routes>
+      <Footer/>
     </div>
   );
 };
