@@ -1,9 +1,9 @@
 import React from 'react';
 import '../pages.css/About.css';
-import h1 from '../assets/h1.jpg';
-import h2 from '../assets/h2.jpg';
-import h3 from '../assets/h3.jpg';
-import h4 from '../assets/h4.jpg';
+import drinks from '../assets/drinks.png';
+import orange from '../assets/orange.png';
+import table2 from '../assets/table2.png';
+import ssofa from '../assets/ssofa.png';
 
 export default function About() {
   return (
@@ -21,10 +21,10 @@ export default function About() {
           officia sed, a nulla tempore quia in cumque temporibus. Tenetur dolore iusto voluptatum aliquam tempore.</p>
     </div>
     <div className='images'>
-      <img src={h1}alt='hotel' />  
-      <img src={h2} alt='hotel'  />
-      <img src={h3} alt='hotel' />
-      <img src={h4}  alt='hotel' />
+      <img src={drinks}alt='hotel' />  
+      <img src={orange} alt='hotel'  />
+      <img src={table2} alt='hotel' />
+      <img src={ssofa}  alt='hotel' />
 
     </div>
 
