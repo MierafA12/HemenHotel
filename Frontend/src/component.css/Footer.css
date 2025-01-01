@@ -1,9 +1,14 @@
-/* Footer container */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .footer {
     background-color: #333;
     color: white;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
+    width: 100% !important;
 }
 
 .footer-content {

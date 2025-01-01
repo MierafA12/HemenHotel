@@ -5,7 +5,8 @@ import About from './pages.jsx/About';
 import Menu from './pages.jsx/Menu';
 import Contact from './pages.jsx/Contact';
 import Header from './component.jsx/Header';
-import Services from './pages.jsx/Services';
+
+import Cards from './pages.jsx/Cards';  
 import Rooms from './pages.jsx/Rooms';
 import Footer from './component.jsx/Footer'; 
 import Map from './component.jsx/Map';
@@ -16,7 +17,7 @@ const App = () => {
       <Header/>          
        <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/services" element={<Services />} />  */}
+        <Route path="/Cards" element={<Cards />} />
         <Route path="/services/rooms" element={<Rooms />} /> 
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />

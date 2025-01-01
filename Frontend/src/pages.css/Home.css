@@ -12,7 +12,7 @@ body .home{
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Roboto', sans-serif;
-    color: #ffffff; 
+    color:black; 
     display: flex;
     justify-content: center;
     overflow: hidden; 
@@ -21,7 +21,7 @@ body .home{
     display: flex;
     width: 100%;
     text-align: center;
-    background: rgba(43, 38, 38, 0.5);
+    background: rgba(43, 38, 38, 0.1);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(4px);
   
@@ -45,7 +45,7 @@ body .home{
 
 /* Logo Styling */
 .logo {
-    background-image: url(../assets/1-removebg-preview.png);
+    background-image: url(../assets/3-removebg-preview.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 550px;
