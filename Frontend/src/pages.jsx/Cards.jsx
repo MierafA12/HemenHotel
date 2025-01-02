@@ -2,6 +2,8 @@ import React from 'react';
 import { FaLocationArrow, FaLocationDot, FaWifi,FaPeopleGroup,FaBed,FaLock} from 'react-icons/fa6';
 import '../pages.css/Cards.css'; 
 
+
+
 export default function Cards() {
   return (
     <div className="allcards">
