@@ -5,7 +5,6 @@ import About from './pages.jsx/About';
 import Menu from './pages.jsx/Menu';
 import Contact from './pages.jsx/Contact';
 import Header from './component.jsx/Header';
-
 import Cards from './pages.jsx/Cards';  
 import Rooms from './pages.jsx/services/Rooms';
 import Meeting from './pages.jsx/services/Meeting';

@@ -136,7 +136,6 @@
   transform: rotate(-50deg) translate(5px, -5px);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .links {
     display: none;
@@ -158,10 +157,13 @@
     opacity: 1;
     visibility: visible;
   }
-
   .dropdown-menu {
-    left: 50%;
-    transform: translateX(-50%);
+    top: 10px; /* Adjust the top spacing for smaller screens */
+    left: 5%; /* Align closer to the left edge */
+    transform: none; /* Remove centering transform */
+    width: 90%; /* Make it occupy most of the screen width */
+    padding: 15px; /* Adjust padding for better spacing */
+    border-radius: 8px; /* Slightly larger border radius for aesthetics */
   }
 
   .hamburger {

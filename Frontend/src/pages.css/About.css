@@ -27,12 +27,11 @@
     color: #555;
   }
   
-
-  .images {
+ .images{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    width: 100%; 
+  
     margin-top: 20px;
     margin-right: 70px;
   }
