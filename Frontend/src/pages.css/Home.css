@@ -12,7 +12,7 @@ body .home{
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Roboto', sans-serif;
-    color:black; 
+    color:#333; 
     display: flex;
     justify-content: center;
     overflow: hidden; 
@@ -46,7 +46,7 @@ body .home{
 
 /* Logo Styling */
 .logo {
-    background-image: url(../assets/3-removebg-preview.png);
+    background-image: url(../assets/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 900px;
@@ -60,4 +60,24 @@ body .home{
      top: 50%;
      left: 30%;
      font-size: 2.5rem;
+}
+
+@media (max-width: 540px) {
+    body .home{
+        height: 70vh;
+       
+       
+    }
+    .hotelImage{
+        height: 70vh;
+        background: rgba(43, 38, 38, 0.05);
+    }
+
+    .logo{
+        margin-top: 10px;
+       height: 450px;
+    }
+    .introduction ,.addition {
+        display: none;
+    }
 }

@@ -4,39 +4,59 @@ import '../component.css/Header.css';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); // Change state when user scrolls more than 50px
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className={`header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className='log'>HEMEN</div>
-      <div className='links'>
-        <div className='one-links'>
-          <Link className='link' to='/'>Home</Link>
+      <div className="log">HEMEN</div>
+      <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
+      <div className={`links ${isMenuOpen ? 'open' : ''}`}>
+        <div className="one-links">
+          <Link className="link" to="/" onClick={() => setIsMenuOpen(false)}>
+            Home
+          </Link>
         </div>
-        <div className='one-links dropdown'>
-          <Link className='link' id="serv" to='/services'>Services  </Link>
-          <div className='dropdown-menu'>
-            <Link className='dropdown-link' to='/services/rooms'>Rooms</Link>
-            <Link className='dropdown-link' to='/services/meeting'>Meeting</Link>
+        <div className="one-links dropdown">
+          <Link className="link" id="serv" to="/services" onClick={() => setIsMenuOpen(false)}>
+            Services
+          </Link>
+          <div className="dropdown-menu">
+            <Link className="dropdown-link" to="/services/rooms" onClick={() => setIsMenuOpen(false)}>
+              Rooms
+            </Link>
+            <Link className="dropdown-link" to="/services/meeting" onClick={() => setIsMenuOpen(false)}>
+              Meeting
+            </Link>
           </div>
         </div>
-        <div className='one-links'>
-          <Link className='link' to='/menu'>Menu</Link>
+        <div className="one-links">
+          <Link className="link" to="/menu" onClick={() => setIsMenuOpen(false)}>
+            Menu
+          </Link>
         </div>
-        <div className='one-links'>
-          <Link className='link' to='/contact'>Contact</Link>
+        <div className="one-links">
+          <Link className="link" to="/contact" onClick={() => setIsMenuOpen(false)}>
+            Contact
+          </Link>
         </div>
       </div>
     </div>

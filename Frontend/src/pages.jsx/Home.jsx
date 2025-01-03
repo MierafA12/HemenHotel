@@ -38,11 +38,11 @@ export default function Home() {
        <div className='hotelImage'>
        <div className='logo'> </div>
         <div ><p className='introduction'>    welcome to hemen hotel </p></div>
-        <div className='addition'>Experience comfort, luxury, and unparalleled service at the heart of the city.</div>
+        <div className='addition'>Experience comfort, luxury service at the heart of the city.</div>
       
     </div>
     </div>  
-     <Cards/>
+    <Cards/>
     <About/>
     <Map/>
     </>
