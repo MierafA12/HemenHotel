@@ -81,3 +81,12 @@ body .home{
         display: none;
     }
 }
+@media ( max-width: 768px){
+    .logo{
+        margin-top: 20px;
+       height: 650px;
+    }
+    .introduction ,.addition{
+        font-size: 1rem;
+    }
+}

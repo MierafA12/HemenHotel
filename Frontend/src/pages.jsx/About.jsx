@@ -7,29 +7,36 @@ import ssofa from '../assets/ssofa.png';
 
 export default function About() {
   return (
-    <>   
-      <div className='about'>
-        <div className='text'>
+    <div className="about">
+      <div className="text">
         <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni, voluptas debitis natus 
-          iure maxime, perspiciatis veniam, minus placeat. Sed, necessitatibus.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates tempore dolore, 
-        at cupiditate aut incidunt consectetur, 
-        voluptatem nam omnis delectus nobis iure? Odit laborum maiores dicta dolore, dolorem deleniti?</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, autem. Repellat quaerat autem velit fuga, 
-          officia sed, a nulla tempore quia in cumque temporibus. Tenetur dolore iusto voluptatum aliquam tempore.</p>
+        <p>
+          Welcome to Hemen Hotel! We are dedicated to creating unforgettable experiences by providing
+          exceptional services, delicious cuisine, and a luxurious atmosphere.
+        </p>
+        <p>
+          Indulge in our wide variety of culinary delights. From traditional dishes to international cuisine,
+          we cater to all taste preferences.
+        </p>
+        <p>
+          At Hemen Hotel, your comfort is our priority. Relax in our elegantly designed rooms featuring
+          cozy furnishings, modern amenities, and scenic views.
+        </p>
+      </div>
+      <div className="images">
+        <div className="image-container" data-hover="Enjoy refreshing cocktails at our bar.">
+          <img src={drinks} alt="Drinks" />
+        </div>
+        <div className="image-container" data-hover="Start your day with a healthy breakfast.">
+          <img src={orange} alt="Orange" />
+        </div>
+        <div className="image-container" data-hover="Experience fine dining in style.">
+          <img src={table2} alt="Dining Table" />
+        </div>
+        <div className="image-container" data-hover="Relax in our cozy lounge area.">
+          <img src={ssofa} alt="Sofa" />
+        </div>
+      </div>
     </div>
-    <div className='images'>
-      <img src={drinks}alt='hotel' />  
-      <img src={orange} alt='hotel'  />
-      <img src={table2} alt='hotel' />
-      <img src={ssofa}  alt='hotel' />
-
-    </div>
-
-    </div>
-    </>
-
-  )
+  );
 }
