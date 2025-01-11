@@ -9,18 +9,25 @@ export default function About() {
   return (
     <div className="about">
       <div className="text">
-        <h1>About Us</h1>
+        <h1>About <span>Us</span></h1>
         <p>
-          Welcome to Hemen Hotel! We are dedicated to creating unforgettable experiences by providing
+          Welcome to Hemen Hotel! We are dedicated to creating unforgettable experiences by providing 
           exceptional services, delicious cuisine, and a luxurious atmosphere.
         </p>
         <p>
-          Indulge in our wide variety of culinary delights. From traditional dishes to international cuisine,
-          we cater to all taste preferences.
+          Indulge in our wide variety of culinary delights. From traditional dishes to international cuisine, 
+          we cater to all taste preferences. Our menu features freshly prepared meals made with locally sourced 
+          ingredients, ensuring every bite is a treat.
         </p>
         <p>
-          At Hemen Hotel, your comfort is our priority. Relax in our elegantly designed rooms featuring
-          cozy furnishings, modern amenities, and scenic views.
+          Our bar offers an impressive selection of beverages, including handcrafted cocktails, fine wines, and 
+          refreshing mocktails. Whether you’re unwinding after a long day or celebrating a special occasion, 
+          our drinks menu has something for everyone.
+        </p>
+        <p>
+          At Hemen Hotel, your comfort is our priority. Relax in our elegantly designed rooms featuring cozy 
+          furnishings, modern amenities, and scenic views. Whether you're here for business or leisure, 
+          our accommodations are tailored to ensure a restful stay.
         </p>
       </div>
       <div className="images">
